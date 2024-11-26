@@ -1,5 +1,18 @@
 require "core.globals"
 
+vim.cmd('source ~/.config/nvim/ftdetect/mlir.vim')
+vim.cmd('source ~/.config/nvim/ftdetect/llvm.vim')
+vim.cmd('source ~/.config/nvim/ftdetect/llvm-lit.vim')
+vim.cmd('source ~/.config/nvim/ftdetect/tablegen.vim')
+vim.cmd('source ~/.config/nvim/ftdetect/cuda.vim')
+
+vim.cmd('source ~/.config/nvim/syntax/mlir.vim')
+vim.cmd('source ~/.config/nvim/syntax/llvm.vim')
+vim.cmd('source ~/.config/nvim/syntax/tablegen.vim')
+
+vim.cmd('source ~/.config/nvim/ftplugin/llvm.vim')
+vim.cmd('source ~/.config/nvim/ftplugin/tablegen.vim')
+
 if vim.version().minor >= 11 then
   vim.tbl_add_reverse_lookup = function(tbl)
     for k, v in pairs(tbl) do
